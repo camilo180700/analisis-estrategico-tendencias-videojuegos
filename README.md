@@ -1,23 +1,55 @@
-# 📈 Estrategia de Inversión en Videojuegos: Análisis de Tendencias Globales (2013-2016)
+# 📈 Video Game Investment Strategy: Global Trend Analysis (2013–2016)
 
-## 📌 Contexto de Negocio
-La industria del videojuego opera en ciclos de vida de consolas (plataformas). El objetivo de este proyecto es **filtrar el ruido histórico** y analizar el desempeño de las ventas globales, regionales, y las preferencias de los usuarios en el **período más reciente y relevante (2013-2016)** para pronosticar las plataformas y géneros con mayor retorno de inversión (ROI) para el próximo año.
+## 📌 Business Context
+The video game industry operates in console life cycles (platform-based ecosystems).  
+The main goal of this project is to **filter historical noise** and analyze global and regional sales performance, as well as user preferences, during the **most recent and relevant period (2013–2016)**.
 
-## 🎯 Metodología Aplicada
+This analysis helps identify the platforms and genres with the **highest potential return on investment (ROI)** for future releases.
 
-1.  **Limpieza y Preprocesamiento:** Normalización de nombres de columnas, manejo de valores nulos, y estandarización del campo `user_score` (convirtiendo 'tbd' a valor nulo).
-2.  **Definición del Período Relevante:** Se aplica un filtro estricto para incluir solo datos a partir de **2013** para enfocarse en el ciclo de vida actual de las consolas (e.g., PS4, Xbox One, Switch predecesoras).
-3.  **Análisis de Segmentación Regional:** Evaluación detallada de las ventas y las preferencias de género y clasificación (Rating) para **Norteamérica (NA), Europa (EU) y Japón (JP)**.
-4.  **Inferencia Estadística:** Prueba T de Student y análisis de correlación para determinar el impacto real de las **calificaciones de críticos y usuarios** en el volumen de ventas.
+---
 
-## 💡 Insights Estratégicos Clave (Resultados para Inversores)
+## 🎯 Methodology
 
-* **Plataformas de Alto Retorno:** Solo **[Plataforma Dominante]** y **[Segunda Plataforma]** mostraron crecimiento sostenido en el período 2013-2016, señalando que las inversiones deben priorizar estos ecosistemas.
-* **Dominio Regional de Géneros:** El género **Shooter** es crucial para el mercado de NA y EU, mientras que **Role-Playing (RPG)** es la prioridad absoluta para el mercado japonés.
-* **Influencia del Crítico:** El análisis estadístico demuestra que la **calificación de los críticos** tiene una correlación **significativa** con las ventas globales, lo que no sucede con la calificación de los usuarios.
+1. **Data Cleaning and Preprocessing**
+   - Column name normalization.
+   - Handling missing values.
+   - Standardization of the `user_score` field (converting `'tbd'` values to null).
 
-**Conclusión Final:** La inversión debe alinearse con el ciclo de vida de las plataformas actuales y la estrategia de contenido debe ser adaptada regionalmente.
+2. **Relevant Time Period Definition**
+   - Strict filtering of data from **2013 onwards** to focus on the current console life cycle  
+     (e.g., PS4, Xbox One, and predecessor platforms of the Nintendo Switch).
 
-## 🛠️ Tecnologías
-`Python` | `Pandas` | `NumPy` | `SciPy.stats` (Inferencia Estadística) | `Matplotlib`/`Seaborn`
+3. **Regional Segmentation Analysis**
+   - Detailed evaluation of sales performance and user preferences by:
+     - **North America (NA)**
+     - **Europe (EU)**
+     - **Japan (JP)**
+   - Analysis by genre and content rating.
 
+4. **Statistical Inference**
+   - Student’s T-test and correlation analysis to measure the real impact of:
+     - **Critic scores**
+     - **User scores**
+   - Evaluation of their influence on global sales volume.
+
+---
+
+## 💡 Key Strategic Insights (Investor-Focused Results)
+
+- **High-Return Platforms**  
+  Only **[Dominant Platform]** and **[Second Platform]** showed sustained growth between 2013 and 2016, indicating that investment should prioritize these ecosystems.
+
+- **Regional Genre Preferences**
+  - **Shooter** games dominate the North American and European markets.
+  - **Role-Playing Games (RPGs)** are the top priority in the Japanese market.
+
+- **Impact of Reviews**
+  Statistical analysis shows that **critic scores have a significant correlation with global sales**, while user scores do not show a strong or consistent relationship.
+
+**Final Conclusion:**  
+Investment decisions should align with the current console life cycle, and content strategies must be adapted to regional market preferences to maximize ROI.
+
+---
+
+## 🛠️ Technologies Used
+`Python` | `Pandas` | `NumPy` | `SciPy.stats` (Statistical Inference) | `Matplotlib` | `Seaborn`
